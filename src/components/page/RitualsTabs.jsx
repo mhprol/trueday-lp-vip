@@ -269,7 +269,7 @@ function Tab2Content() {
           Os 12 áudios foram desenhados por Roberta Calderini — neuropsicóloga,
           criadora da Neuropsicogenealogia, 1,6 milhão de seguidores e 60 mil
           pacientes atendidos. Cada ritual trabalha uma frente em camadas, do
-          mais simples ao mais profundo. Sem lição de casa, sem打卡 — tem
+          mais simples ao mais profundo. Sem lição de casa, sem cobrança — tem
           constância.
         </p>
       </div>

@@ -1,0 +1,24 @@
+/* Trueday — LP VIP. Entry stylesheet. Imports the design system tokens in order
+   (must match the order in the design system `styles.css` so the cascade is right). */
+@import url("./fonts.css");
+@import url("./colors.css");
+@import url("./typography.css");
+@import url("./spacing.css");
+@import url("./radii.css");
+@import url("./elevation.css");
+@import url("./effects.css");
+@import url("./motion.css");
+@import url("./base.css");
+
+/* LP-specific overrides */
+html, body { background: var(--td-black); }
+body { font-family: var(--font-body); }
+
+/* Reasonable safe-area for mobile notches so the top bar doesn't get clipped. */
+body { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+
+/* Hide focus outline on mouse, keep for keyboard. */
+:focus:not(:focus-visible) { outline: none; }
+
+/* Tiny utility used in a few places. */
+.td-no-scroll { overflow: hidden; }

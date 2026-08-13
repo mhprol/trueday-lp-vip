@@ -1,0 +1,21 @@
+/* Trueday — corner radii. Restrained: the brand is squared-off and
+   pharmaceutical. Only badges/pills go fully round. */
+:root{
+  --radius-none:0;
+  --radius-xs:3px;
+  --radius-sm:6px;
+  --radius-md:10px;
+  --radius-lg:14px;
+  --radius-xl:20px;
+  --radius-pill:999px;
+
+  --radius-control:var(--radius-sm);
+  --radius-card:var(--radius-md);
+  --radius-badge:var(--radius-pill);
+  --radius-plate:var(--radius-xs);
+  --radius-modal:var(--radius-lg);
+
+  /* stroke widths */
+  --bw-hairline:1px; /* @kind spacing */
+  --bw-thick:2px; /* @kind spacing */
+}

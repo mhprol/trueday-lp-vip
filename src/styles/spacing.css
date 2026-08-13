@@ -1,0 +1,31 @@
+/* Trueday — spacing & layout. 4px base, generous vertical rhythm:
+   the artwork breathes, blocks are separated by air not by boxes. */
+:root{
+  --sp-0:0; /* @kind spacing */
+  --sp-1:4px;
+  --sp-2:8px;
+  --sp-3:12px;
+  --sp-4:16px;
+  --sp-5:20px;
+  --sp-6:24px;
+  --sp-8:32px;
+  --sp-10:40px;
+  --sp-12:48px;
+  --sp-16:64px;
+  --sp-20:80px;
+  --sp-24:96px;
+  --sp-32:128px;
+
+  --gutter:24px;
+  --gutter-lg:48px;
+  --container-max:1280px; /* @kind spacing */
+  --container-narrow:720px; /* @kind spacing */
+  --section-y:96px; /* @kind spacing */
+  --section-y-sm:56px; /* @kind spacing */
+
+  /* control heights */
+  --control-h-sm:34px; /* @kind spacing */
+  --control-h-md:44px; /* @kind spacing */
+  --control-h-lg:54px; /* @kind spacing */
+  --tap-min:44px; /* @kind spacing */
+}

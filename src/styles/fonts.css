@@ -1,0 +1,6 @@
+/* Trueday Nutrition Essentials — webfonts
+   NOTE: no original brand font binaries were supplied with the Mídias/ source set.
+   The families below are the closest Google Fonts matches to the artwork
+   (see readme.md → "Font substitutions"). Replace with licensed brand files
+   by swapping this @import for local @font-face rules. */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..700&family=Parisienne&family=JetBrains+Mono:wght@400;600&display=swap");

@@ -252,33 +252,44 @@ export function Hero() {
           0%, 100% { transform: translate(-50%, 0); opacity: .9; }
           50%      { transform: translate(-50%, 8px); opacity: 1; }
         }
+        @keyframes td-bob-static {
+          0%, 100% { transform: translateY(0); opacity: .85; }
+          50%      { transform: translateY(6px); opacity: 1; }
+        }
         @media (max-width: 900px) {
           .td-hero-photo {
             position: absolute !important;
             top: 0 !important;
             right: 0 !important;
             width: 100% !important;
-            height: 62vh !important;
+            height: 38vh !important; /* was 62vh: brings CTA above the fold on every phone */
             background-position: center 24% !important;
           }
           .td-hero-grain { display: none; }
           .td-hero-scrim {
-            background: linear-gradient(180deg, rgba(7,7,10,.30) 0%, rgba(7,7,10,.55) 38%, rgba(7,7,10,.96) 100%) !important;
+            background: linear-gradient(180deg, rgba(7,7,10,.15) 0%, rgba(7,7,10,.45) 30%, rgba(7,7,10,.92) 70%, rgba(7,7,10,.98) 100%) !important;
           }
           .td-hero-grid {
             grid-template-columns: 1fr !important;
             min-height: 0 !important;
-            padding-top: 70vh !important;
+            padding-top: 46vh !important; /* was 70vh */
             padding-bottom: 56px !important;
           }
           .td-hero-spacer { display: none; }
-          .td-hero-headline { font-size: 36px !important; line-height: 1.06 !important; }
-          .td-hero-sub { font-size: 16px !important; }
-          .td-hero-cue { display: none; }
+          .td-hero-headline { font-size: 32px !important; line-height: 1.08 !important; } /* was 36 */
+          .td-hero-sub { font-size: 15px !important; } /* was 16 — small trim for tighter above-the-fold */
+          .td-hero-cue {
+            display: block !important;
+            position: static !important;
+            margin: var(--sp-8) auto 0 !important;
+            transform: none !important;
+            text-align: center !important;
+            animation: td-bob-static 2.4s var(--ease-standard) infinite;
+          }
         }
         @media (max-width: 420px) {
-          .td-hero-headline { font-size: 30px !important; line-height: 1.08 !important; }
-          .td-hero-grid { padding-top: 64vh !important; }
+          .td-hero-headline { font-size: 26px !important; line-height: 1.1 !important; }
+          .td-hero-grid { padding-top: 42vh !important; } /* was 64vh */
         }
         @media (min-width: 901px) and (max-width: 1100px) {
           .td-hero-headline { font-size: 42px !important; }

@@ -92,6 +92,7 @@ export function Hero() {
             gap: "var(--sp-5)",
             alignItems: "flex-start",
             maxWidth: 560,
+            minWidth: 0, // critical on mobile: lets the column shrink below its content's intrinsic width
           }}
         >
           {/* Sol nascente mark — drawn as inline SVG so it scales and we
@@ -133,6 +134,9 @@ export function Hero() {
               textTransform: "none",
               color: "var(--td-white)",
               letterSpacing: "-0.005em",
+              overflowWrap: "break-word",
+              wordWrap: "break-word",
+              minWidth: 0,
             }}
             className="td-hero-headline"
           >
@@ -158,6 +162,7 @@ export function Hero() {
               font: "var(--type-body-lg)",
               color: "var(--text-body)",
               margin: 0,
+              minWidth: 0,
             }}
             className="td-hero-sub"
           >
@@ -187,6 +192,7 @@ export function Hero() {
               gap: "var(--sp-3)",
               alignItems: "flex-start",
               width: "100%",
+              minWidth: 0, // critical on mobile: prevents the CTA from forcing the column wider than the viewport
             }}
             className="td-hero-cta"
           >
@@ -198,6 +204,7 @@ export function Hero() {
               size="lg"
               iconRight="arrow-right"
               fullWidth
+              style={{ whiteSpace: "normal", minWidth: 0 }}
             >
               Entrar no grupo VIP gratuito
             </Button>
@@ -268,6 +275,10 @@ export function Hero() {
           .td-hero-headline { font-size: 36px !important; line-height: 1.06 !important; }
           .td-hero-sub { font-size: 16px !important; }
           .td-hero-cue { display: none; }
+        }
+        @media (max-width: 420px) {
+          .td-hero-headline { font-size: 30px !important; line-height: 1.08 !important; }
+          .td-hero-grid { padding-top: 64vh !important; }
         }
         @media (min-width: 901px) and (max-width: 1100px) {
           .td-hero-headline { font-size: 42px !important; }

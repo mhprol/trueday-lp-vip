@@ -55,7 +55,14 @@ function Tab1Content() {
       }}
       className="td-tab-grid"
     >
-      <div style={{ display: "flex", flexDirection: "column", gap: "var(--sp-5)" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "var(--sp-5)",
+          minWidth: 0, // critical on mobile: lets the column shrink below intrinsic content width
+        }}
+      >
         <Eyebrow tone="gold">O que você vai receber</Eyebrow>
         <h3
           style={{
@@ -65,6 +72,9 @@ function Tab1Content() {
             textTransform: "uppercase",
             color: "var(--text-title)",
             maxWidth: 480,
+            overflowWrap: "break-word",
+            wordWrap: "break-word",
+            minWidth: 0,
           }}
         >
           12 áudios diários com rituais{" "}
@@ -86,6 +96,7 @@ function Tab1Content() {
             font: "var(--type-body-lg)",
             color: "var(--text-body)",
             maxWidth: 520,
+            minWidth: 0,
           }}
         >
           Todo dia, um áudio novo no grupo. Curto, denso, transformador.
@@ -122,6 +133,7 @@ function Tab1Content() {
           gap: "var(--sp-5)",
           alignSelf: "start",
           position: "relative",
+          minWidth: 0, // critical on mobile: lets the card shrink to the column
         }}
       >
         <div
@@ -202,7 +214,7 @@ function Tab1Content() {
           size="lg"
           iconRight="arrow-right"
           fullWidth
-          style={{ marginTop: "var(--sp-2)" }}
+          style={{ marginTop: "var(--sp-2)", whiteSpace: "normal", minWidth: 0 }}
         >
           Entrar no grupo VIP gratuito
         </Button>

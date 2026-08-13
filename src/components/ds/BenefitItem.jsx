@@ -25,23 +25,42 @@ export function BenefitItem({
         alignItems: column ? "center" : "flex-start",
         textAlign: column ? "center" : "left",
         gap: column ? "var(--sp-3)" : "var(--sp-4)",
+        minWidth: 0,
         ...style,
       }}
     >
       <Icon name={icon} size={size} color={color} circled={circled} strokeWidth={1.5} />
-      <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 4,
+          minWidth: 0, // critical: lets the text column shrink below the icon
+          flex: column ? undefined : 1,
+        }}
+      >
         <span
           style={{
             font: `var(--fw-bold) ${column ? "var(--fs-xs)" : "var(--fs-sm)"}/1.25 var(--font-body)`,
             letterSpacing: column ? "var(--ls-label)" : "0.03em",
             textTransform: "uppercase",
             color: onLight ? "var(--text-title-light)" : "var(--text-title)",
+            overflowWrap: "break-word",
+            wordWrap: "break-word",
           }}
         >
           {title}
         </span>
         {description ? (
-          <span style={{ font: "var(--type-body-sm)", fontSize: "var(--fs-xs)", color: onLight ? "var(--text-muted-light)" : "var(--text-muted)" }}>
+          <span
+            style={{
+              font: "var(--type-body-sm)",
+              fontSize: "var(--fs-xs)",
+              color: onLight ? "var(--text-muted-light)" : "var(--text-muted)",
+              overflowWrap: "break-word",
+              wordWrap: "break-word",
+            }}
+          >
             {description}
           </span>
         ) : null}

@@ -6,6 +6,7 @@ import { BenefitItem } from "../ds/BenefitItem.jsx";
 import { Icon } from "../ds/Icon.jsx";
 import { Eyebrow } from "../ds/Eyebrow.jsx";
 import { GoldRule } from "../ds/GoldRule.jsx";
+import { trackVipClick } from "../../lib/track.js";
 
 const WHATSAPP_URL =
   "https://chat.whatsapp.com/L3cn08CaOnmJI822TgzGrF?s=sh&p=i&ilr=4&amv=1";
@@ -214,6 +215,7 @@ function Tab1Content() {
           size="lg"
           iconRight="arrow-right"
           fullWidth
+          onClick={() => trackVipClick("card")}
           style={{ marginTop: "var(--sp-2)", whiteSpace: "normal", minWidth: 0 }}
         >
           Entrar no grupo VIP gratuito
@@ -374,6 +376,7 @@ function Tab2Content() {
           rel="noopener noreferrer"
           size="md"
           iconRight="arrow-right"
+          onClick={() => trackVipClick("ribbon")}
         >
           Quero participar
         </Button>

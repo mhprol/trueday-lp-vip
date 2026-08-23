@@ -3,6 +3,7 @@ import { Button } from "../ds/Button.jsx";
 import { Eyebrow } from "../ds/Eyebrow.jsx";
 import { GoldRule } from "../ds/GoldRule.jsx";
 import { Icon } from "../ds/Icon.jsx";
+import { trackVipClick } from "../../lib/track.js";
 
 const WHATSAPP_URL =
   "https://chat.whatsapp.com/L3cn08CaOnmJI822TgzGrF?s=sh&p=i&ilr=4&amv=1";
@@ -205,6 +206,7 @@ export function Hero() {
               size="lg"
               iconRight="arrow-right"
               fullWidth
+              onClick={() => trackVipClick("hero")}
               style={{ whiteSpace: "normal", minWidth: 0 }}
             >
               Entrar no grupo VIP gratuito

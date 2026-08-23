@@ -38,7 +38,7 @@ export function Hero() {
           right: 0,
           height: "100%",
           width: "min(56%, 720px)",
-          backgroundImage: "url(./photo-roberta-hero.png)",
+          backgroundImage: `url(${import.meta.env.BASE_URL}photo-roberta-hero.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center 18%",
         }}

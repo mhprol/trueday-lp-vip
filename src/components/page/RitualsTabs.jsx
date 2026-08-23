@@ -162,7 +162,7 @@ function Tab1Content() {
                 marginTop: 4,
               }}
             >
-              De XX/XX a XX/XX · todos os dias às 8h.
+              De 31/08 a 12/09 · todos os dias às 8h, descanso no domingo.
             </div>
           </div>
         </div>

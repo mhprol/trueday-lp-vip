@@ -7,9 +7,8 @@ import { Icon } from "../ds/Icon.jsx";
 import { Eyebrow } from "../ds/Eyebrow.jsx";
 import { GoldRule } from "../ds/GoldRule.jsx";
 import { trackVipClick } from "../../lib/track.js";
+import { GRUPO_VIP_URL } from "../../lib/links.js";
 
-const WHATSAPP_URL =
-  "https://chat.whatsapp.com/L3cn08CaOnmJI822TgzGrF?s=sh&p=i&ilr=4&amv=1";
 
 const T1_BENEFITS = [
   { icon: "headphones", title: "12 áudios curtos", description: "Cada ritual tem até 10 minutos — ouve no seu tempo." },
@@ -209,7 +208,7 @@ function Tab1Content() {
 
         <Button
           as="a"
-          href={WHATSAPP_URL}
+          href={GRUPO_VIP_URL}
           target="_blank"
           rel="noopener noreferrer"
           size="lg"
@@ -371,7 +370,7 @@ function Tab2Content() {
         </div>
         <Button
           as="a"
-          href={WHATSAPP_URL}
+          href={GRUPO_VIP_URL}
           target="_blank"
           rel="noopener noreferrer"
           size="md"

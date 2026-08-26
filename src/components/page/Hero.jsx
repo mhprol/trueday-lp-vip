@@ -4,9 +4,8 @@ import { Eyebrow } from "../ds/Eyebrow.jsx";
 import { GoldRule } from "../ds/GoldRule.jsx";
 import { Icon } from "../ds/Icon.jsx";
 import { trackVipClick } from "../../lib/track.js";
+import { GRUPO_VIP_URL } from "../../lib/links.js";
 
-const WHATSAPP_URL =
-  "https://chat.whatsapp.com/L3cn08CaOnmJI822TgzGrF?s=sh&p=i&ilr=4&amv=1";
 
 /**
  * Hero — full-bleed photo of Roberta on the right, copy stack on the left.
@@ -200,7 +199,7 @@ export function Hero() {
           >
             <Button
               as="a"
-              href={WHATSAPP_URL}
+              href={GRUPO_VIP_URL}
               target="_blank"
               rel="noopener noreferrer"
               size="lg"

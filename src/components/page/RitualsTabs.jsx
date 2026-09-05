@@ -162,7 +162,7 @@ function Tab1Content() {
                 marginTop: 4,
               }}
             >
-              De 31/08 a 12/09 · todos os dias às 8h, descanso no domingo.
+              12 áudios diários a partir de 02/09 · todos os dias às 8h, sem interrupção.
             </div>
           </div>
         </div>
